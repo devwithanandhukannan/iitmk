@@ -81,28 +81,3 @@ body {
     transform: translateY(-6px);
     box-shadow: 0 6px 20px rgba(90, 46, 166, 0.1);
 }
-
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 15px 30px;
-    }
-
-    .nav {
-        flex-wrap: wrap;
-        margin-top: 10px;
-    }
-
-    .contact h1 {
-        font-size: 28px;
-    }
-
-    .contact-cards {
-        gap: 20px;
-    }
-
-    .card-item {
-        width: 90%;
-    }
-}

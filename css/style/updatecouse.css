@@ -77,25 +77,3 @@ body {
     transform: scale(0.98);
 }
 
-
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 15px 25px;
-    }
-
-    .nav {
-        margin-top: 8px;
-        flex-wrap: wrap;
-    }
-
-    .nav a {
-        margin: 5px 10px;
-    }
-
-    .container {
-        margin-top: 150px;
-        padding: 30px 25px;
-    }
-}
