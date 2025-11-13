@@ -1,83 +1,120 @@
-:root {
-    --primary-color: #8b46f7;
-    --secondary-color: #f3e8ff;
-    --text-primary: #5a2ea6;
-    --bg-light: #faf8ff;
-}
-
-body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    margin: 0;
+body{
+    font-family: Arial;
     padding: 0;
-    background-color: var(--bg-light);
+    margin: 0;
 }
-
-.contact {
+img{
+    padding: 10px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f3e8ff;
+}.nav{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}.nav a{
+    color:black;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 12px;
+}.content, .courses{
     text-align: center;
-    margin-top: 60px;
-    margin-bottom: 30px;
+    margin-top: 5%;
     padding: 20px;
+    background-color: whitesmoke;
 }
-
-.contact h6 {
-    color: var(--primary-color);
-    font-size: 15px;
-    font-weight: 600;
-    margin-bottom: 5px;
-}
-
-.contact h1 {
-    font-size: 36px;
-    color: #222;
-    margin-bottom: 10px;
-}
-
-.contact p {
-    font-size: 16px;
-    color: #666;
-}
-
-.contact-cards {
+.course-cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
-    padding: 30px;
+    gap: 50px;
 }
-
-.card-item {
-    background-color: white;
-    border-radius: 12px;
-    width: 280px;
+.cardimg{
+    height: 30vh;
+    width: auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: left;
+}.table{
+    margin: auto;
+    width: 60%;
+    padding: 20px;
+}table{
+    width: 100%;
+}.contact{
     text-align: center;
-    padding: 25px 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    margin-top: 5%;
+    padding: 20px;
 }
-
-.card-item img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 15px;
-}
-
-.card-item h4 {
-    color: var(--text-primary);
-    margin: 10px 0;
-}
-
-.card-item p {
+.contact h6{
+    color: purple;
     font-size: 14px;
-    color: #555;
-    margin: 6px 0;
+    margin-bottom: 3px;
 }
-
-.card-item .highlight {
-    color: var(--primary-color);
-    font-weight: 600;
+.contact h1{
+    font-size: 36px;
+    margin-bottom: 10px;
 }
-
-.card-item:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 6px 20px rgba(90, 46, 166, 0.1);
+.contact p{
+    font-size: 16px;
+    color: grey;
+}.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}.card-items{
+    width: 300px;
+    text-align: center;
+}
+.learn_more_container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}.back_to_course_btn{
+    height: 40px;
+    width: 200px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}.backtocourse_content{
+    margin-top: 20px;
+    background-color: thistle;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.description, .prerequisites, .Features{
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+}.price{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.price_btn button{
+    height: 40px;
+    width: 100px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.price_btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}.thumbnail{
+    border-radius: 50px;
 }
