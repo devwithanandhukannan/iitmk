@@ -13,7 +13,7 @@
         const ele = document.createElement('h1');
         ele.textContent = 'hacker';
         name.appendChild(ele);
-        
+
         const ulist = document.createElement('ul');
         const li1 = document.createElement('li');
         li1.textContent = 'Item 1';
@@ -23,6 +23,61 @@
         ulist.appendChild(li2);
 
         name.appendChild(ulist);
+
+        ulist.style.backgroundColor='red'
+        ulist.style.color='white'
+        ulist.style.paddingTop='10px'
+        ulist.style.paddingBottom='10px'
+        ulist.style.width='300px'
+        ulist.style.borderRadius='20px'
+
+
+        let num1 = 10
+        let num2 = 43
+        sum = num1+num2
+        diff = num1-num2
+        quotient = num1/num2
+        reminder = num2%num1
+        document.write(`<br>${num1} + ${num2} is :${sum}`)
+        document.write(`<br>${num1} - ${num2} is :${diff}`)
+        document.write(`<br>${num1} / ${num2} is :${quotient}`)
+        document.write(`<br>${num1} / ${num2} is :${reminder}`)
+        
+
+        let string1 = '10'
+        let string2 = '40'
+        concat = string1+string2
+        document.write(`<br>conact ${string1}+${string2} is :${concat}`)
+
+        let a = 10
+        let b = '10'
+
+        console.log(a == b)   //check val only     ----> ture
+        console.log(a === b)  //check val + type   ----> false
+
+        let x =10000
+        let y =14
+        let z = 120
+        document.write(`<br>x = ${x}, y= ${y}, z=${z}`)
+        document.write(`<br>x>y ${x>y}`)
+        document.write(`<br>x>=y ${x>=y}`)
+        document.write(`<br>x<y ${x<y}`)
+        document.write(`<br>x<=y ${x<=y}`)
+        document.write(`<br>x==y ${x<=y}`)
+        document.write(`<br>${x>y?x:y} is greater`)
+        document.write(`<br>${x>y?(x>z?x:z):(y>z?y:z)} is greater`)
+
+        console.log((x>y&&x>z?x:(y>z?y:z)));
+
+        if(x>y){
+            console.log('x is larger')
+        }else{
+            console.log('y is larger')
+        }
+        
+        if(x>y) console.log('x is larger')
+        if(y>x) console.log('y is larger')
+
     </script>
 </body>
 </html>
